@@ -1,0 +1,9 @@
+name: OnlineTime
+version: 1.0
+author: lamacode
+
+main: me.lamacode.onlinetime.core.PluginCore
+
+commands:
+  onlinetime:
+    aliases: [ot, onlinezeit, spielzeit, playtime]
