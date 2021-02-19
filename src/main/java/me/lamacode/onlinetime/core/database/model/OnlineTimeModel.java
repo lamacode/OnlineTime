@@ -14,7 +14,7 @@ public class OnlineTimeModel {
 
     private long onlineTime;
 
-    private long calcTime = onlineTime;
+    private long calcTime;
 
     private long joinTime;
 

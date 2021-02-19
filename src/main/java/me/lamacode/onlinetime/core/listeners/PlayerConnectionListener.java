@@ -44,6 +44,7 @@ public class PlayerConnectionListener implements Listener {
 
         OnlineTimeModel onlineTimeModel = timeModelRepository.get(proxiedPlayer.getUniqueId()).fetch();
 
+        onlineTimeModel.calculateTimeLocal();
         onlineTimeModel.calculateTime();
 
         timeModelRepository.get(proxiedPlayer.getUniqueId()).update(onlineTimeModel);

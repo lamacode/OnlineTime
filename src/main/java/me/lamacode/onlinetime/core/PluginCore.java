@@ -26,6 +26,7 @@ public class PluginCore extends Plugin {
     @Override
     public void onDisable() {
         OnlineTimeRessource.CACHE.forEach((key, model) -> {
+            model.calculateTimeLocal();
             model.calculateTime();
             repository.get(key).update(model);
         });
